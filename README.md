@@ -1,6 +1,6 @@
-FHAPD dataset will be avaliable using Baidu Network:
-https://pan.baidu.com/s/1VY5GQDB6BNgmCRPp1L4-hA?pwd=dq5z 
-Subsequent complete data will be released after the official publication of the article
 Please wait patiently and welcome FHAPD coming soon~~~
+I am currently following the process of data anonymization and promise to make FHAPD public. 
+Please be patient and contact me promptly if you have any questions. 
+I am currently focusing on my doctoral thesis and expect to complete it in one month (3/24/205).
 
 
