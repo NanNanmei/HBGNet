@@ -66,7 +66,7 @@ def writeTiff(im_data, im_geotrans, im_proj, path):
     del dataset
 
 
-#######测试的时候用这个
+#######
 # class DatasetImageMaskContourDist(Dataset):
 #
 #     def __init__(self,  file_names):
@@ -194,36 +194,3 @@ def load_distance(path):
     return torch.from_numpy(np.expand_dims(dist, 0)).float()
 
 
-
-
-# def load_distance(path, distance_type):
-#
-#     if distance_type == "dist_mask":
-#         path = path.replace("image", "dist_mask").replace("tif", "mat")
-#
-#         dist = io.loadmat(path)["D2"]
-#
-#     if distance_type == "dist_contour":
-#         path = path.replace("image", "dist_contour").replace("tif", "mat")
-#         dist = io.loadmat(path)["D2"]
-#
-#     if distance_type == "dist_contour_tif":
-#         dist = cv2.imread(path.replace("image", "dist_contour").replace("tif", "tif"), 0)
-#         dist = dist/255.
-#
-#     return torch.from_numpy(np.expand_dims(dist, 0)).float()
-
-# def load_contour1(path):
-#
-#     # contour = cv2.imread(path, 0)
-#     im_width, im_height, im_bands, boundary, im_geotrans, im_proj = readTif(path)
-#     # contour = contour.astype('uint8')
-#     boundary = boundary/255.
-#     # contour[contour ==255] = 1
-#     # contour[contour == 0] = 0
-#
-#
-#     return torch.from_numpy(np.expand_dims(boundary, 0)).long()
-#
-# if __name__ == '__main__':
-#     print(load_contour1(r"I:\data\train_boundary\3_270xjgf2.tif"))

@@ -8,15 +8,15 @@
 """
 
 from torch.nn.parameter import Parameter
-from timm.models.registry import register_model
-import math
+# from timm.models.registry import register_model
+# import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from functools import partial
-from timm.models.layers import DropPath, to_2tuple, trunc_normal_
+# from functools import partial
+# from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 from lib.pvtv2 import pvt_v2_b2
-from tensorboardX import SummaryWriter
+# from tensorboardX import SummaryWriter
 
 def conv3x3(in_, out):
     return nn.Conv2d(in_, out, 3, padding=1)
@@ -389,7 +389,7 @@ class Long_distance(nn.Module):
 
         return out
 
-##局部和全局上下文（或近和远距离上下文提取）
+##局部空间和全局空间上下文（或近和远距离上下文提取）
 class near_and_long(nn.Module):
     def __init__(self, in_channel,out_channel):
         super(near_and_long, self).__init__()
@@ -522,7 +522,7 @@ class Field(nn.Module):
 
     def forward(self, x):
         #---------------------------------------------------------------------#
-        # models.py 是全加的结果------ baseline + GLCA + BGM + MSF
+        #
 
         edge = self.edge_lap(x)
         edge = self.conv1(edge)
@@ -556,9 +556,6 @@ class Field(nn.Module):
         ###multi-scale feature fusion module
         ms = torch.cat([edge1,bs2,bs3,bs4],1)
         out = self.multi_fusion(ms)
-
-        # out = self.boundary1(edge,out)  #加上好像没啥变化，自己可以保留试试
-
 
         edge_out = self.edge_feature(edge)
         edge_out = F.log_softmax(edge_out, dim=1)
