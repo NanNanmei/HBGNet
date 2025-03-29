@@ -1,14 +1,9 @@
 import torch
 import os
 from torch.utils.data import DataLoader
-# from dataset import DatasetImageMaskContourDist
-from dataset_RE import DatasetImageMaskContourDist
+from dataset import DatasetImageMaskContourDist
 import glob
-# from models import BsiNet,Field
-# from model_Field1 import Field
-from featuremap_Field import Field
-# from models_Baseline import Field
-# from model_noEdgeBrunch import Field
+from models import Field
 from tqdm import tqdm
 import numpy as np
 import cv2
@@ -26,9 +21,9 @@ def build_model(model_type):
 if __name__ == "__main__":
     args = create_validation_arg_parser().parse_args()
     args.model_file = r"E:\zhaohang\DeepL\模型训练pt文件_lmx机子\JS_zh\80.pt"
-    args.save_path = r"D:\DeepL\data\paper\JS\test\特征图可视化\pre_mask1"
+    args.save_path = r"D:\DeepL\data\paper\JS\test\pre_mask1"
     args.model_type = 'field'
-    args.test_path = r"D:\DeepL\data\paper\JS\test\特征图可视化\train_image"
+    args.test_path = r"D:\DeepL\data\paper\JS\test\train_image"
 
     # args = create_validation_arg_parser().parse_args()
     # args.model_file = r"D:\DeepL\data\paper\JS\ablation_study\model_F1\model_pt\50.pt"
