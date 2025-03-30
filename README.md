@@ -47,7 +47,7 @@ Make sure to put the files as the following structure:
 ```
 inputs
 └── <train>
-    ├── train_dist
+    ├── train_image
     |   ├── 001.tif
     │   ├── 002.tif
     │   ├── 003.tif
