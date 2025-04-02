@@ -76,7 +76,7 @@ For test datasets, the same structure as the above.
 
 The weight of PVT-V2 pretrained on ImageNet dataset can be downloaded from: https://drive.google.com/file/d/1uzeVfA4gEQ772vzLntnkqvWePSw84F6y/view?usp=sharing
 
-### A large-scale VHR parcel dataset dataset
+### A large-scale VHR parcel dataset
 The beautiful vision for FHAPD is that it will be a continuously updated dataset for different agricultural landscapes in China. At present, I have carried out many AP delineation works in different regions of China using HBGNet, such as Shanghai, Inner Mongolia, Guangdong, Shandong and Gansu, and will update it immediately after the official publication of this article. 
 I also built an APs dataset for the African and tried to add it to the FHAPD as a personality region.
 
