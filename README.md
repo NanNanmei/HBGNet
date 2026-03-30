@@ -80,7 +80,7 @@ The weight of PVT-V2 pretrained on ImageNet dataset can be downloaded from: http
 The beautiful vision for FHAPD is that it will be a continuously updated dataset for different agricultural landscapes in China. At present, I have carried out many AP delineation works in different regions of China using HBGNet, such as Shanghai, Inner Mongolia, Guangdong, Shandong and Gansu, and will update it immediately after the official publication of this article. 
 I also built an APs dataset for the African and tried to add it to the FHAPD as a personality region.
 
-Link: https://pan.baidu.com/s/1OS7G0H27zGexxRfqTcKizw?pwd=8die code: 8die
+Link: https://pan.baidu.com/s/1ugOUa875R0Oa-uAz9ye-Ug?pwd=9mit code: 9mit
 
 If you have any problem, please email to zhaohang201@mails.ucas.ac.cn.
 
